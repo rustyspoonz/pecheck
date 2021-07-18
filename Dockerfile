@@ -4,8 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt requirements.txt
 
-COPY sentinel.py one.py ./
-COPY /test ./test/
+COPY pecheck.py pelib.py ./
 
 RUN pip3 install -r requirements.txt --no-cache-dir
 
